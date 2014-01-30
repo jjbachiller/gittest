@@ -1,0 +1,3 @@
+# AcmeDemoBundle routes (to be removed)
+main:
+    resource: "@AcmeDemoBundle/Resources/config/routing.yml"
