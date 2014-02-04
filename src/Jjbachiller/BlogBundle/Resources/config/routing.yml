@@ -1,3 +1,5 @@
-jjbachiller_blog_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: JjbachillerBlogBundle:Default:index }
+JjbachillerBlogBundle_homepage:
+    pattern: /
+    defaults: { _controller: JjbachillerBlogBundle:Page:index }
+    requirements:
+        _method: GET
