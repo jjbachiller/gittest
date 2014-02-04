@@ -1,4 +1,3 @@
-jjbachiller_hello:
-    resource: "@JjbachillerHelloBundle/Resources/config/routing.yml"
+jjbachiller_blog:
+    resource: "@JjbachillerBlogBundle/Resources/config/routing.yml"
     prefix:   /
-
