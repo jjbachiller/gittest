@@ -1,3 +1,0 @@
-jjbachiller_hello_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: JjbachillerHelloBundle:Default:index }

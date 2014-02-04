@@ -1,7 +1,0 @@
-parameters:
-#    jjbachiller_hello.example.class: Jjbachiller\HelloBundle\Example
-
-services:
-#    jjbachiller_hello.example:
-#        class: %jjbachiller_hello.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
