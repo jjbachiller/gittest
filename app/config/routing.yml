@@ -1,3 +1,7 @@
+jjbachiller_association:
+    resource: "@JjbachillerAssociationBundle/Resources/config/routing.yml"
+    prefix:   /
+
 jjbachiller_blog:
     resource: "@JjbachillerBlogBundle/Resources/config/routing.yml"
     prefix:   /
