@@ -1,0 +1,3 @@
+jjbachiller_association_homepage:
+    pattern:  /associations/
+    defaults: { _controller: JjbachillerAssociationBundle:Default:index }
