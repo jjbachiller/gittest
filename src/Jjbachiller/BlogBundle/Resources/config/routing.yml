@@ -3,3 +3,15 @@ JjbachillerBlogBundle_homepage:
     defaults: { _controller: JjbachillerBlogBundle:Page:index }
     requirements:
         _method: GET
+
+JjbachillerBlogBundle_about:
+    pattern: /about
+    defaults: { _controller: JjbachillerBlogBundle:Page:about }
+    requirements:
+        _method: GET
+
+JjbachillerBlogBundle_contact:
+    pattern: /JjbachillerBlogBundle_contact
+    defaults: { _controller: JjbachillerBlogBundle:Page:contact }
+    requirements:
+        _method: GET
