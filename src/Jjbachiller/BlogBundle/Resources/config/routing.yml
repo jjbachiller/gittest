@@ -11,7 +11,7 @@ JjbachillerBlogBundle_about:
         _method: GET
 
 JjbachillerBlogBundle_contact:
-    pattern: /JjbachillerBlogBundle_contact
+    pattern: /contact
     defaults: { _controller: JjbachillerBlogBundle:Page:contact }
     requirements:
-        _method: GET
+        _method: GET|POST

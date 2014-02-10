@@ -2,6 +2,11 @@
 
 namespace Jjbachiller\BlogBundle\Entity;
 
+use Symfony\Component\Validator\Mapping\ClassMetadata;
+use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Validator\Constraints\Email;
+use Symfony\Component\Validator\Constraints\Length;
+
 class Enquiry
 {
 	protected $name;
@@ -51,5 +56,14 @@ class Enquiry
 	{
 		$this->body = $body;
         return $this;
+	}
+
+	public static function loadValidatorMetadata(classMetadata $metadata)
+	{
+		$metadata->addPropertyConstraint('name', new NotBlank());
+		$metadata->addPropertyConstraint('email', new Email(array('message' => 'Introduzca una dirección de eMail válida.')));
+		$metadata->addPropertyConstraint('subject', new NotBlank());
+		$metadata->addPropertyConstraint('subject', new Length(array('max' => 50)));
+		$metadata->addPropertyConstraint('body', new Length(array('min' => 50)));
 	}
 }
